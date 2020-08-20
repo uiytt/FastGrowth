@@ -20,3 +20,4 @@ gradle/
 run/
 out/
 .git/
+.gitattributes
