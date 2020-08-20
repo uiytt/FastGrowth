@@ -15,3 +15,5 @@ This mod only need [fabric-api](https://www.curseforge.com/minecraft/mc-mods/fab
 If you are using ModMenu, you will also need [ClothConfig APIv2](https://www.curseforge.com/minecraft/mc-mods/cloth-config)
 #### More infos
 If this mod is on a server, you do NOT need it to connect to this server.
+
+You are totally free of using this mod in any modpack. 
