@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "fastgrowth",
+  "version": "1.0",
+
+  "name": "FastGrowth",
+  "description": "Shift to make crops/trees grow",
+  "authors": [
+    "uiytt"
+  ],
+  "contact": {},
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "fr.uiytt.fastgrowth.FastGrowth"
+    ],
+    "modmenu": [
+      "fr.uiytt.fastgrowth.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "fastgrowth.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.9.2",
+    "fabric": "*",
+    "minecraft": "1.15.2"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
