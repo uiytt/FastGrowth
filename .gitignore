@@ -16,7 +16,6 @@
 .gradle/
 .idea/
 build/
-gradle/
 run/
 out/
 .git/
