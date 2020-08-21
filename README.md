@@ -5,7 +5,7 @@ FastGrowth is a [FABRIC](https://fabricmc.net/ "FABRIC") mod.
 
 Link to curseforge: https://www.curseforge.com/minecraft/mc-mods/fastgrowth
 
-Forge version: https://www.curseforge.com/minecraft/mc-mods/tree-growing-simulator
+Forge version (not mine): https://www.curseforge.com/minecraft/mc-mods/tree-growing-simulator
 
 This mod is currently available for Minecraft 1.15.2
 
