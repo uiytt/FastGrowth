@@ -1,0 +1,7 @@
+{
+  "title.fastgrowth.config":"蹲苗助长配置 §2(FastGrowth)",
+  "config.fastgrowth.chanceOfFertilizing": "生长概率",
+  "config.fastgrowth.chanceOfFertilizing.tooltip":"植物在你按下潜行时生长的概率 (介于 0 到 100 之间).",
+  "config.fastgrowth.particleCount": "粒子数量",
+  "config.fastgrowth.particleCount.tooltip": "植物生长时生成效果粒子的数量"
+}
