@@ -2,7 +2,7 @@
  Shift to make crops/trees grow
 
 FastGrowth is a [FABRIC](https://fabricmc.net/ "FABRIC") mod.
-
+Link : https://www.curseforge.com/minecraft/mc-mods/fastgrowth
 Forge version: https://www.curseforge.com/minecraft/mc-mods/tree-growing-simulator
 
 This mod is currently available for Minecraft 1.15.2
