@@ -5,6 +5,7 @@ import me.shedaniel.clothconfig2.api.ConfigBuilder;
 import me.shedaniel.clothconfig2.api.ConfigCategory;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
 import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.text.TranslatableText;
 
 public class ClothConfigManager {
     public static Screen build(Screen parent) {
@@ -16,7 +17,7 @@ public class ClothConfigManager {
         ConfigEntryBuilder entryBuilder = builder.entryBuilder();
         general.addEntry(entryBuilder.startIntField("config."+FastGrowth.MODID + ".chanceOfFertilizing",FastGrowth.CONFIG_MANAGER.getChanceOfFertilizing())
                 .setDefaultValue(33)
-                .setTooltip("Chance to make a plant grow when shifting (between 0 and 100).")
+                .setTooltip(new TranslatableText("config."+FastGrowth.MODID + ".chanceOfFertilizing.tooltip").toString())
                 .setSaveConsumer(newValue -> {
                     FastGrowth.CONFIG_MANAGER.setChanceOfFertilizing(Math.max(0,Math.min(100,newValue)));
                 })
@@ -25,7 +26,7 @@ public class ClothConfigManager {
                 .build());
         general.addEntry(entryBuilder.startIntField("config."+FastGrowth.MODID + ".particleCount",FastGrowth.CONFIG_MANAGER.getParticleCount())
                 .setDefaultValue(10)
-                .setTooltip("Number of particle spawned when a plant grows")
+                .setTooltip(new TranslatableText("config."+FastGrowth.MODID + ".particleCount.tooltip").toString())
                 .setSaveConsumer(newValue -> {
                     FastGrowth.CONFIG_MANAGER.setParticleCount(newValue);
                 })

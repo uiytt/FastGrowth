@@ -1,5 +1,7 @@
 {
   "title.fastgrowth.config":"Config of FastGrowth",
   "config.fastgrowth.chanceOfFertilizing": "Chance of Growing",
-  "config.fastgrowth.particleCount": "Number of Particle"
+  "config.fastgrowth.chanceOfFertilizing.tooltip":"Chance to make a plant grow when shifting (between 0 and 100).",
+  "config.fastgrowth.particleCount": "Number of Particle",
+  "config.fastgrowth.particleCount.tooltip": "Number of particle spawned when a plant grows"
 }
