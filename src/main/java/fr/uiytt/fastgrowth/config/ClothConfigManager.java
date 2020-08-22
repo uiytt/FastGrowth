@@ -17,7 +17,7 @@ public class ClothConfigManager {
         ConfigEntryBuilder entryBuilder = builder.entryBuilder();
         general.addEntry(entryBuilder.startIntField("config."+FastGrowth.MODID + ".chanceOfFertilizing",FastGrowth.CONFIG_MANAGER.getChanceOfFertilizing())
                 .setDefaultValue(33)
-                .setTooltip(new TranslatableText("config."+FastGrowth.MODID + ".chanceOfFertilizing.tooltip").toString())
+                .setTooltip(new TranslatableText("config."+FastGrowth.MODID + ".chanceOfFertilizing.tooltip").asString())
                 .setSaveConsumer(newValue -> {
                     FastGrowth.CONFIG_MANAGER.setChanceOfFertilizing(Math.max(0,Math.min(100,newValue)));
                 })
@@ -26,7 +26,7 @@ public class ClothConfigManager {
                 .build());
         general.addEntry(entryBuilder.startIntField("config."+FastGrowth.MODID + ".particleCount",FastGrowth.CONFIG_MANAGER.getParticleCount())
                 .setDefaultValue(10)
-                .setTooltip(new TranslatableText("config."+FastGrowth.MODID + ".particleCount.tooltip").toString())
+                .setTooltip(new TranslatableText("config."+FastGrowth.MODID + ".particleCount.tooltip").asString())
                 .setSaveConsumer(newValue -> {
                     FastGrowth.CONFIG_MANAGER.setParticleCount(newValue);
                 })
