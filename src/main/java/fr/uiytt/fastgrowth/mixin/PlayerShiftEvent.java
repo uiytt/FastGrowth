@@ -14,7 +14,7 @@ public class PlayerShiftEvent {
 
     @Inject(at = @At("HEAD"), method = "setSneaking(Z)V")
     private void sneakingActivate(boolean sneaking,CallbackInfo info) {
-        if(sneaking == false) {return;}
+        if(!sneaking) {return;}
         PlayerEntity player = (PlayerEntity) (Object) this;
         FastGrowth.playerShift(player);
     }
