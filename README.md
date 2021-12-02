@@ -7,7 +7,7 @@ Link to curseforge: https://www.curseforge.com/minecraft/mc-mods/fastgrowth
 
 Forge version (not mine): https://www.curseforge.com/minecraft/mc-mods/tree-growing-simulator
 
-This mod is currently available for Minecraft 1.15.2 and 1.16.x, you can ask nicely for a port in another version on the github issue 
+This mod is currently available for Minecraft 1.15.2, 1.16.x, 1.17.x, you can ask nicely for a port in another version on the github issue
 
 ### Dependencies
 Apart from fabric
