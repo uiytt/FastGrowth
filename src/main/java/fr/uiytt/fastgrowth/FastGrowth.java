@@ -2,16 +2,15 @@ package fr.uiytt.fastgrowth;
 
 import fr.uiytt.fastgrowth.config.ConfigManager;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.network.ServerSidePacketRegistry;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Fertilizable;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BoneMealItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.network.packet.s2c.play.ParticleS2CPacket;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -32,7 +31,7 @@ public class FastGrowth implements ModInitializer {
         CONFIG_MANAGER.load();
     }
 
-    public static void playerShift(PlayerEntity player) {
+    public static void playerShift(ServerPlayerEntity player) {
         BlockPos player_pos = player.getBlockPos();
         World world = player.getEntityWorld();
         ItemStack bonemeal = new ItemStack(Items.BONE_MEAL);
@@ -72,7 +71,7 @@ public class FastGrowth implements ModInitializer {
                         1.0F,
                         CONFIG_MANAGER.getParticleCount());
 
-                ServerSidePacketRegistry.INSTANCE.sendToPlayer(player, particle_packet);
+                player.networkHandler.sendPacket(particle_packet);
             }
 
         }
