@@ -13,10 +13,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class PlayerShiftEvent {
 
     @Inject(at = @At("HEAD"), method = "setSneaking(Z)V")
-    private void sneakingActivate(boolean sneaking,CallbackInfo info) {
-        if(!sneaking) {return;}
-        ServerPlayerEntity player = (ServerPlayerEntity) (Object) this;
-        FastGrowth.playerShift(player);
+    private void sneakingActivate(boolean sneaking, CallbackInfo info) {
+        if (sneaking) {
+            ServerPlayerEntity player = (ServerPlayerEntity) (Object) this;
+            FastGrowth.playerShift(player);
+        }
     }
-
 }
